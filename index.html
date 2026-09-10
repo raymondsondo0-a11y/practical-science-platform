@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Practical Science Platform — interactive science learning through experiments, resources, and guided practical activities.">
+  <title>Practical Science Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Practical Science Platform home">
+        <span class="brand-mark">⚗</span>
+        <span>Practical<span>Science</span></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#explore">Explore</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#about">About</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">◐</button>
+        <a class="nav-cta" href="#explore">Start learning</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-glow glow-one"></div>
+      <div class="hero-glow glow-two"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span></span> Learn science by doing</div>
+          <h1>Turn curiosity into <em>practical knowledge.</em></h1>
+          <p class="hero-text">Discover guided experiments, interactive lessons, and practical science resources designed to make learning active, clear, and memorable.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#explore">Explore experiments <span>→</span></a>
+            <a class="btn btn-secondary" href="#how-it-works">See how it works</a>
+          </div>
+          <div class="hero-trust">
+            <div class="avatar-stack"><span>🧑🏽‍🔬</span><span>👩🏾‍🔬</span><span>🧑🏿‍🏫</span><span>👩🏽‍🎓</span></div>
+            <p><strong>Built for curious minds</strong><br>Students, teachers & self-learners</p>
+          </div>
+        </div>
+        <div class="science-visual" aria-label="Science learning illustration">
+          <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+          <div class="science-card main-flask">
+            <div class="flask-icon">⚗</div>
+            <span>EXPERIMENT 01</span>
+            <strong>Acid–Base<br>Reactions</strong>
+            <small>Interactive practical</small>
+          </div>
+          <div class="floating-card card-top"><span>🧪</span><div><strong>24+</strong><small>Experiments</small></div></div>
+          <div class="floating-card card-bottom"><span>✓</span><div><strong>Step by step</strong><small>Guided learning</small></div></div>
+          <div class="atom">✦</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-section">
+      <div class="container stats-grid">
+        <div><strong id="statExperiments">0</strong><span>Practical activities</span></div>
+        <div><strong id="statSubjects">0</strong><span>Science subjects</span></div>
+        <div><strong>100%</strong><span>Learning by doing</span></div>
+        <div><strong>Free</strong><span>To explore</span></div>
+      </div>
+    </section>
+
+    <section class="explore section" id="explore">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="section-kicker">THE LAB</span><h2>Explore practical science</h2></div>
+          <p>Choose a subject, find an activity, and learn through practical experience.</p>
+        </div>
+        <div class="toolbar">
+          <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Search experiments, topics..." aria-label="Search experiments"></label>
+          <div class="filters" id="filters"><button class="filter active" data-subject="All">All</button><button class="filter" data-subject="Biology">Biology</button><button class="filter" data-subject="Chemistry">Chemistry</button><button class="filter" data-subject="Physics">Physics</button></div>
+        </div>
+        <div class="course-grid" id="courseGrid"><div class="loading">Loading practical activities...</div></div>
+        <div class="empty-state" id="emptyState" hidden><div>🔎</div><h3>No activities found</h3><p>Try another search term or subject.</p></div>
+      </div>
+    </section>
+
+    <section class="how section" id="how-it-works">
+      <div class="container">
+        <div class="section-heading centered"><span class="section-kicker">SIMPLE PROCESS</span><h2>Learn it. Do it. Understand it.</h2><p>A practical learning loop that takes you from concept to confidence.</p></div>
+        <div class="steps">
+          <article class="step"><div class="step-number">01</div><div class="step-icon">📖</div><h3>Understand</h3><p>Start with a clear explanation of the science behind the activity.</p></article>
+          <article class="step"><div class="step-number">02</div><div class="step-icon">🧪</div><h3>Experiment</h3><p>Follow practical steps, observe what happens, and record your results.</p></article>
+          <article class="step"><div class="step-number">03</div><div class="step-icon">💡</div><h3>Discover</h3><p>Connect your observations to scientific ideas and test what you learned.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="container about-grid">
+        <div class="about-art"><div class="circle-art">∑</div><div class="formula formula-one">F = ma</div><div class="formula formula-two">H₂O</div><div class="formula formula-three">E = mc²</div></div>
+        <div class="about-copy"><span class="section-kicker">WHY PRACTICAL SCIENCE</span><h2>Science makes more sense when you can <em>experience it.</em></h2><p>Practical Science Platform brings experiments and science resources into one simple learning space. The goal is not just to memorize facts, but to observe, test, question, and understand.</p><div class="check-list"><div>✓ Clear, student-friendly explanations</div><div>✓ Guided practical activities</div><div>✓ Resources for independent learning</div></div></div>
+      </div>
+    </section>
+
+    <section class="contact section">
+      <div class="container contact-box">
+        <div><span class="section-kicker">KEEP EXPLORING</span><h2>Have a science question?</h2><p>Send it to the platform and we'll keep building resources around real learner needs.</p></div>
+        <form id="contactForm" class="contact-form"><input id="contactName" type="text" placeholder="Your name" required><input id="contactEmail" type="email" placeholder="Email address" required><textarea id="contactMessage" rows="3" placeholder="What would you like to learn?" required></textarea><button class="btn btn-primary" type="submit">Send question <span>→</span></button><p id="formStatus" class="form-status" role="status"></p></form>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="container footer-inner"><a class="brand" href="#home"><span class="brand-mark">⚗</span><span>Practical<span>Science</span></span></a><p>Learn science by doing.</p><p>© <span id="year"></span> Practical Science Platform</p></div></footer>
+
+  <div class="modal" id="courseModal" aria-hidden="true"><div class="modal-backdrop" data-close-modal></div><article class="modal-content"><button class="modal-close" data-close-modal aria-label="Close">×</button><div id="modalBody"></div></article></div>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
